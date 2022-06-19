@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div id="titleBox">
+            <h1 class="center" >Primal Astrology</h1>
+            <h2 class="center" id="description">Reading the Stars for Your Advantage </h2>
+        </div>
+        <form method="post" action="./results.php">
+            <input
+                class="center"
+                id="queryBox"
+                name="queryBox"
+                type="text" 
+                maxlength="4"
+                minlength="4"
+                placeholder="Enter Your Birthdate"
+                autofocus
+                required
+                pattern="\d{4}"
+                oninvalid="this.setCustomValidity('Enter a four-digit year\ne.g. 1984')"
+                oninput="this.setCustomValidity('')"
+                >
+            <input class="center" id="submitButton" name="submitButton" type="submit" value="Find My Sign">
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
